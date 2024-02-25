@@ -74,7 +74,7 @@ Make sure you have the following installed on your machine:
 
 
 ### Authentication
- - All routes except for the POST /auth/register and POST /auth/login routes are protected and require authentication. You need to include a valid JSON Web Token (JWT) in the Authorization header of your requests.
+ - All routes except for the POST /user/register and POST /user/login routes are protected and require authentication. You need to include a valid JSON Web Token (JWT) in the Authorization header of your requests.
 
  # Endpoints
  - POST /auth/register: Register a new user.
