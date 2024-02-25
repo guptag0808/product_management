@@ -37,7 +37,7 @@ Make sure you have the following installed on your machine:
 ## Usage
 
 ## User Schema 
- - **Endpoint:** `/signup`
+ - **Endpoint:** `/user/register`
 - **Method:** `POST`
 - **Request Body:**
 
@@ -47,9 +47,9 @@ Make sure you have the following installed on your machine:
 	"email":"raj@gmail.com",
 	"password":"raj"
   }
-  #### Request
 
-- **Endpoint:** `/login`
+
+- **Endpoint:** `/user/login`
 - **Method:** `POST`
 - **Request Body:**
 
