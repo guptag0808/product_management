@@ -1,6 +1,6 @@
 # Product Management API
 
-This is a simple API for managing products and product categories built using Node.js, Express, and Sequelize.
+This is a simple API for managing products and product categories built using Node.js, Express, Sequelize , mysql2.
 
 ## Table of Contents
 
