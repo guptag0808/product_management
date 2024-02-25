@@ -5,7 +5,7 @@ const {Product} = require("../model/product")
 const {authentication} = require("../middleware/authMiddleware")
 
 // add new product
-productRouter.post('/create', async (req, res) => {
+productRouter.post('/create',authentication, async (req, res) => {
 	try {
 	  const { itemName, itemCode, typeName } = req.body;
   
@@ -62,7 +62,7 @@ productRouter.get('/', async (req, res) => {
   });
   
   // Update product by ID
-  productRouter.put('/:id', async (req, res) => {
+  productRouter.put('/:id',authentication, async (req, res) => {
 	try {
 	  const productId = req.params.id;
 	  const { itemName, itemCode, typeName } = req.body;
@@ -94,7 +94,7 @@ productRouter.get('/', async (req, res) => {
   });
   
   // Delete product by ID
-  productRouter.delete('/:id', async (req, res) => {
+  productRouter.delete('/:id',authentication, async (req, res) => {
 	try {
 	  const productId = req.params.id;
   

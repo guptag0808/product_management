@@ -21,14 +21,10 @@ const Product = sequelize.define('Product', {
     },
   }
 });
-// if (ProductType && ProductType.prototype instanceof sequelize.Model) {
-// 	Product.belongsTo(ProductType);
-//   } else {
-// 	console.error('Invalid ProductType model');
-//   }
+
 Product.belongsTo(ProductType);
-sequelize.sync().then(() => {
-	console.log('Models synchronized with the database.');
+sequelize.sync({logging: false}).then(() => {
+	
   });
   
 module.exports = {Product};

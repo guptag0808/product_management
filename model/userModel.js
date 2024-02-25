@@ -20,8 +20,8 @@ const User = sequelize.define('User', {
 });
 
 // Synchronize the model with the database (creates the User table if it doesn't exist)
-sequelize.sync({ force: false }).then(() => {
-  console.log('User model synchronized with the database.');
+sequelize.sync({ force: false ,logging: false }).then(() => {
+ 
 });
 
 module.exports = { User };
