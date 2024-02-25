@@ -37,11 +37,41 @@ Make sure you have the following installed on your machine:
 ## Usage
 
 ## User Schema 
-{
-	"username":"rahul",
-	"email":"rahul@gmail.com",
-	"password":"rahul"
-}
+ - **Endpoint:** `/signup`
+- **Method:** `POST`
+- **Request Body:**
+
+  ```json
+  {
+    "username":"Raj",
+	"email":"raj@gmail.com",
+	"password":"raj"
+  }
+  #### Request
+
+- **Endpoint:** `/login`
+- **Method:** `POST`
+- **Request Body:**
+
+  ```json
+  {
+    
+	"email":"raj@gmail.com",
+	"password":"raj"
+  }
+  
+- **Endpoint:** `/product/create`
+- **Method:** `POST`
+- **Request Body:**
+
+  ```json
+  {
+    
+	"itemName":"sharee",
+	"itemCode":"abc121",
+	"itemType":"clothes"
+  }
+
 
 ### Authentication
  - All routes except for the POST /auth/register and POST /auth/login routes are protected and require authentication. You need to include a valid JSON Web Token (JWT) in the Authorization header of your requests.
